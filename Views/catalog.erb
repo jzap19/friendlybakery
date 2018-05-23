@@ -1,0 +1,71 @@
+<nav class="navbar  navbar-light navbar-expand-sm sticky-top" style="background-color: pink">
+  <div class="container">
+    <a class="navbar-brand d-none d-sm-inline-block" href="#">
+      <img src="images/sweet.png" style="width: 350px;">
+    </a>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="/">Home</a>
+      <a class="nav-item nav-link" href="cookies">Cookies</a>
+      <a class="nav-item nav-link" href="cakes">Cakes</a>
+      <a class="nav-item nav-link" href="muffins">Muffins</a>
+      <a class="nav-item nav-link" href="catalog">Catalog</a>
+    </div>
+  </div>
+</nav>
+
+<center>
+  <% @my_cookies.each do |cookie| %>
+
+    <ul style="list-style : none;">
+      <li>
+        <img src="<%= cookie.image %>" width="400px" height="400px"></li>
+      <li>
+        <%= cookie.cookies%>
+      </li>
+      <li>
+        <%= cookie.description%>
+      </li>
+      <li>
+        <%= cookie.price%>
+      </li>
+    </ul>
+
+  <% end %>
+</center>
+<center>
+  <% @my_cakes.each do |cake| %>
+
+    <ul style="list-style : none;">
+      <li>
+        <img src="<%= cake.image %>" width="400px" height="400px"></li>
+      <li>
+        <%= cake.cakes%>
+      </li>
+      <li>
+        <%= cake.description%>
+      </li>
+      <li>
+        <%= cake.price %>
+      </li>
+    </ul>
+
+  <% end %>
+</center>
+<center>
+  <% @my_muffins.each do |muffin| %>
+
+    <ul style="list-style : none;">
+      <li>
+        <img src="<%= muffin.image %>" width="400px" height="400px"></li>
+      <li>
+        <%= muffin.muffins %>
+      </li>
+      <li>
+        <%= muffin.description %>
+      </li>
+      <li>
+        <%= muffin.price %>
+      </li>
+    </ul>
+
+  <% end %>

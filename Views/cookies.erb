@@ -1,0 +1,40 @@
+<nav class="navbar  navbar-light navbar-expand-sm" style="background-color: pink">
+  <div class="container">
+    <a class="navbar-brand d-none d-sm-inline-block" href="#">
+      <img src="images/sweet.png" style="width: 350px;">
+    </a>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="/">Home</a>
+      <a class="nav-item nav-link" href="cookies">Cookies</a>
+      <a class="nav-item nav-link" href="cakes">Cakes</a>
+      <a class="nav-item nav-link" href="muffins">Muffins</a>
+      <a class="nav-item nav-link" href="catalog">Catalog</a>
+    </div>
+  </div>
+</nav>
+
+<center>
+  <h1>
+    Assorted Flavors of Cookies
+  </h1>
+  <% @my_cookies.each do |cookie| %>
+
+    <ul style="list-style : none;">
+      <li>
+        <img src="<%= cookie.image%>" width="400px" height="400px"></li>
+      <li>
+        <%= cookie.cookies%>
+      </li>
+      <li>
+        <%= cookie.description%>
+      </li>
+      <li>
+        <%= cookie.price%>
+      </li>
+    </ul>
+
+  <% end %>
+
+</center>
+
+<!-- @cookies = cookies @description = description @price = price -->
