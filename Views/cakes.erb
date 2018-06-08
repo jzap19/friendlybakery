@@ -1,6 +1,7 @@
 <nav class="navbar  navbar-light navbar-expand-sm" style="background-color: pink">
   <div class="container">
     <a class="navbar-brand d-none d-sm-inline-block" href="#">
+      <!-- don't use inline styles -->
       <img src="images/sweet.png" style="width: 350px;">
     </a>
     <div class="navbar-nav">
@@ -19,6 +20,7 @@
   </h1>
   <% @my_cakes.each do |cake| %>
 
+    <!-- don't use inline styles -->
     <ul style="list-style : none;">
       <li>
         <img src="<%= cake.image %>" width="400px" height="400px"></li>
