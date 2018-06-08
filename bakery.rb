@@ -30,6 +30,8 @@ get('/cookies') do
   diffcookie = Cookie.new('Chocolate Chip Cookie', 'The OG of cookies and a staple in the baking biz. Can never go wrong with this classic.', '$40.00', '/images/chocolatechip.jpg')
   diffcookie2 = Cookie.new('Kitchen Sink', 'A little bit of everything. You name it you can have it mixed with rasins, peanut butter chips and nuts.', '$40.00', '/images/kitchensink.jpg')
   diffcookie3 = Cookie.new('Brownie Cookie', 'The full chocolatey experience.', '$40.00', '/images/browniecookie.jpg')
+  
+  # good job on using an array jose
   @my_cookies = [diffcookie, diffcookie2, diffcookie3]
   erb(:cookies)
 end
@@ -38,6 +40,8 @@ get('/cakes') do
   diffcake = Cake.new('Strawberry Shortcake', 'The staple in many bakery shops. The Strawberry Shortcake is not anything but short.', '$40.00', '/images/shortcake.jpg')
   diffcake2 = Cake.new('Napolean Cake', 'A French Delight thats hard to miss.', '$40.00', '/images/napolean.jpg')
   diffcake3 = Cake.new('Red Velvet Cake', 'The Red velvet cake is as sweet as they come.', '$40.00', '/images/redvelvet.jpg')
+  
+  # good job on using an array jose
   @my_cakes = [diffcake, diffcake2, diffcake3]
   erb(:cakes)
 end
@@ -45,6 +49,8 @@ get('/muffins') do
   diffmuffin = Muffin.new('Blueberry Muffin', 'A delicious pick me up and with a boost of anti-oxidants to start off your day right.', '$40.00', '/images/blueberry.jpg')
   diffmuffin2 = Muffin.new('Double Chocolate Chip Muffins', 'Double the chocolate double the trouble. Every bite that doubles down on the classic.', '$40.00', '/images/double.jpg')
   diffmuffin3 = Muffin.new('Apple Cinnamon Muffins', 'With the perfect amount of cinnamon, little pockets of apples, and a sweet crumb topping, these Apple Cinnamon Muffins are the perfect way to start your day.', '$40.00', '/images/apple.jpg')
+  
+  # good job on using an array jose
   @my_muffins = [diffmuffin, diffmuffin2, diffmuffin3]
 
   erb(:muffins)
